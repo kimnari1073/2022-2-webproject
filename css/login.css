@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Noto+Serif+KR:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+*{
+    font-family:'Kdam Thmor Pro','Nanum Gothic';
+    box-sizing: border-box;
+    font-size: 13px;
+}
+header{
+    text-align: center;
+    font-size: 50px;
+    /*outline: none;*/
+    height: 30px;
+    margin: 50px auto;
+}
+
+body{
+    font-size: 20px;
+    background-color: #f5f6f7;
+    color: #222;
+}
+/* a{
+    text-decoration: none;
+    color: #222
+} */
+
+.member{
+    width: 300px;
+    margin: auto;
+}
+.member input:not(input[type=radio]), .field select {
+    border: 1px solid #dadada;
+    padding: 10px;
+    width: 100%;
+}
+/*가입하기*/
+.member input[type=submit]{ 
+    cursor: pointer;
+    background-color: #5c5c5c;
+    color: #fff;
+}
+/* input[type=number]의 화살표 없애기 */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.field{
+    margin: 10px 0;
+}
+/* 각 input의 필드명 */
+.field b{
+    display: block;
+    font-size: 20px;
+
+}
+
+
+.field.birth div{
+    display: flex;
+    gap: 5px;
+}
+.field.tel-number div{
+    display: flex;
+    gap: 5px;
+}
+.field.email div{
+    display: flex;
+    gap: 5px;
+}
+
+
+/* 성별 */
+.field.gender div{
+    border: 1px solid #dadada;
+    background-color: #fff;
+    padding: 5px 5px;
+
+}
