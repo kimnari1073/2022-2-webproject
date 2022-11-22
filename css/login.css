@@ -13,6 +13,12 @@ header{
     height: 30px;
     margin: 50px auto;
 }
+/* 로고 a태그-밑줄 지우기 */
+a { text-decoration: none; color: black; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
 
 body{
     font-size: 20px;

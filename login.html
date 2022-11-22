@@ -16,30 +16,31 @@
       <div class="field">
         <b>아이디*</b>
         <input type="text" id="id">
-        <span style="display:none;color:red">필수 입력사항 입니다.</span>
+        <span></span>
       </div>
       <div class="field">
         <b>비밀번호*</b>
         <input type="password" id="pw">
-        <span style="display:none;color:red">필수 입력사항 입니다.</span>
+        <span></span>
       </div>
       <div class="field">
         <b>비밀번호 확인*</b>
         <input type="password" id="rpw">
-        <span style="display:none;color:red">일치하지 않습니다.</span>
+        <span></span>
       </div>
       <div class="field">
         <b>이름*</b>
         <input type="text" id="user">
-        <span style="display:none;color:red">필수 입력사항 입니다.</span>
+        <span></span>
       </div>
       <div class="field birth">
         <b>생년월일*</b>
         <div>
-          <input type="number" placeholder="년(4자)">
-          <input type="number" placeholder="월(2자)">
-          <input type="number" placeholder="일(2자)">
+          <input type="number" id="year" placeholder="년(4자)" oninput ="next()">
+          <input type="number" id="month" placeholder="월(2자)" oninput="next()">
+          <input type="number" id="day" placeholder="일(2자)">
         </div>
+        <span></span>
       </div>
       <div class="field gender">
         <b>성별</b>

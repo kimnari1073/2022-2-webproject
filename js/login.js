@@ -1,49 +1,46 @@
 let id = $('#id');
-let pw = $('#pw');
-let rpw = $('#rpw');
+let pw = $('#pw'); let rpw = $('#rpw');
 let user = $('#user');
+let year = $('#year'); let month = $('#month'); let day = $('#day');
 let btn = $('#btn');
 
+function right(a){
+  a.next('span').css("display","none");
+}
+function wrong(a, text){
+  a.next('span').css({"display":"block","color":"red"})
+  a.next('span').text(text)
+  a.focus();
+}
+function next(){
+  if(year.val().length == 4) month.focus()
+  if(month.val().length == 2) day.focus()
+}
 
 btn.click(function () {
   // id
-  if (id.val() == '') {
-    id.next('span').css("display", "block");
-    id.focus();
-  } else if (id.val() != '') {
-    id.next('span').css("display", "none")
-  }
+  if (id.val() == '') wrong(id, "필수 입력사항 입니다.");
+  else if (id.val() != '') right(id);
   // pw & rpw
   if (pw.val() == '') {
-    pw.next('span').css("display", "block")
-    if (id.val() != '') pw.focus();
-  } else if (rpw.val() == '') {
-    pw.next('span').css("display", "none")
-    rpw.next('span').css("display", "block")
-    if (id.val() != '' && pw.val() != '') rpw.focus();
-  } else if (rpw.val() != pw.val()) {
-    rpw.next('span').css("display", "block")
-    rpw.next('span').css({
-      "display": "block",
-      "color": "red"
-    });
-    rpw.next('span').text("일치하지 않습니다.")
-    if (id.val() != '' && pw.val() != '') {
-      rpw.val('');
-      rpw.focus();
-
-    }
-  } else if (rpw.val() == pw.val()) {
-    rpw.next('span').css({
-      "display": "block",
-      "color": "green"
-      
-    });
-    rpw.next('span').text("일치합니다.")
+    wrong(pw, "필수 입력사항 입니다.")
+    wrong(rpw, "일치하지 않습니다.")
+  } 
+  else if (rpw.val() != pw.val()) {
+    right(pw)
+    wrong(rpw,"일치하지 않습니다.") 
+  }
+  else if (rpw.val() == pw.val()) {
+    right(pw)
+    right(rpw)
   }
   // name
-  if (user.val() == '') {
-    user.next('span').css("display", "block")
-    if (id.val() != '' && pw.val() != '' && (pw.val() == rpw.val())) user.focus();
-  } else user.next('span').css("display", "none")
+  if (user.val() == '') wrong(user,"필수 입력사항 입니다.")
+  else right(user)
+  //birth
+  // let today = new Date();
+  let today = new Date()
+  let birth = new Date(Number(year.val()),Number(month.val())+1,Number(day.val()));// getMonth = 0~11의 값이 나옴.
+  alert(birth.getMonth()+today())
 })
+
