@@ -2,6 +2,7 @@
 let id = $('#id');
 let pw = $('#pw'); let rpw = $('#rpw');
 let user = $('#user');
+let birth = $('#birth')
 let year = $('#year'); let month = $('#month'); let day = $('#day');
 let gender = $('#gender')
 let btn = $('#btn');
@@ -52,15 +53,16 @@ btn.click(function () {
   let dayArr = [31,28,31,30,31,30,31,31,30,31,30,31]
   if(yearVal%4==0 && (yearVal%100!=0||yearVal%400==0)) //윤년&평년
     dayArr[1]=29
-  if(monthVal <= 0 || monthVal >=13 || dayVal<=0 ||dayVal > dayArr[monthVal-1]){
-    alert("생년월일을 잘못 입력하였습니다.")
+  if(monthVal <= 0 || monthVal >=13 || dayVal<=0 ||dayVal > dayArr[monthVal-1]){ //생년월일 유효성 검사
+    wrong(birth, "잘못 입력되었습니다.")
     year.focus()
     year.val('')
     month.val('')
     day.val('')
     clock = 0
   }
-  else if(today.getMonth()+1<monthVal || (today.getMonth()+1==monthVal && today.getDate()<dayVal)){ //생일이 지났는지 확인
+  else right(birth)
+  if(today.getMonth()+1<monthVal || (today.getMonth()+1==monthVal && today.getDate()<dayVal)){ //생일이 지났는지 확인
     age--
   }
   //gender
