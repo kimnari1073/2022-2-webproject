@@ -1,9 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Noto+Serif+KR:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
-*{
-    font-family:'Kdam Thmor Pro','Nanum Gothic';
-    box-sizing: border-box;
-}
 /* header */
 header{
     width: 1200px;
@@ -20,36 +14,4 @@ header{
 header > div{
     float: right;
     margin-top: 60px;
-}
-/* nav */
-nav{
-    float: left;
-    font-size:20px;
-    margin: 10px 20% auto;
-    width: 1200px;
-    height:70px;
-    border: solid 5px #cccccc;
-    font-weight: bold;
-}
-nav li{
-    display: inline;
-    margin: 0px 110px;
-    position: relative; 
-}
-nav li::after{
-    position: absolute; 
-    top: 0px; left: -15px; 
-    width: 130%; 
-    height: 25px; 
-    padding:0px 3px 3px 3px;
-    line-height: 40px; 
-    content: attr(title); 
-    color: #000000; 
-    border: 2px solid #000; 
-    max-width: 0; 
-    overflow: hidden; 
-    transition: all 0.5s;
-}
-nav li:hover::after{
-    max-width: 130%;
 }
