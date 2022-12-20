@@ -10,7 +10,6 @@ aside{
     background: linear-gradient(45deg,#FB412C,#C6272C,#D94446,#E3536C,#E3536C,#E3536C,#c03121,#cf6265);
     border-left: solid 3px #cccccc;
     border-right: solid 3px #cccccc;
-
 }
 aside li{
     text-align: center;
@@ -69,13 +68,20 @@ section{
     margin:0px;
 }
 
-h1{
+.title-1{
     font-size: 50px;
     margin-bottom: 10px;
     padding-bottom: 10px;
     border-bottom: 3px solid;
     width: 100% ;
     float: left;   
+}
+.title-2{
+    font-size: 30px;
+    border: 5px solid;
+    border-radius: 10px;
+    width: 100%;
+    float: left;
 }
 /* #box{
     width: 306px;
@@ -118,9 +124,15 @@ a:visited{
     visibility: hidden;
 }
 
-.part{
+.part-1{
     border: 1px dashed #000;
     width: 360px;
-    height: 500px;
+    height: 480px;
+    float: left;
+}
+.part-2{
+    border: 1px dashed #000;
+    width: 360px;
+    height: 400px;
     float: left;
 }
