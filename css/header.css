@@ -6,6 +6,7 @@ header{
 }
 .main-logo{
     font-size: 60px;
+    font-family: 'Kdam Thmor Pro';
 }
 .login,.singUp{
    font-size: 20px;

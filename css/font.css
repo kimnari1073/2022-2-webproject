@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Noto+Serif+KR:wght@500&display=swap');
+/* Google Web Font : Nanum Gothic */
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+/* 영어1 : Kdam Thmor Pro */
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Noto+Serif+KR:wght@500&display=swap');
 *{  
-    font-family:'Kdam Thmor Pro','Nanum Gothic';
+    font-family:'Nanum Gothic';
     box-sizing: border-box;
 }

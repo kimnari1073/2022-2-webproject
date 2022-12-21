@@ -1,3 +1,7 @@
+body{
+	width: 100%;
+	border: 1px solid #000;
+}
 /* aside */
 aside{
     float: left;
@@ -38,35 +42,35 @@ section{
     height: 8000px;
     margin-left:20%;
     border:5px solid #cccccc;
-    text-align: center;
     padding: 0px 50px 0px 50px;
 
 }
-/* .kor{
-    font-family: 'Noto Serif Korean';
-    font-size:15px;
-    font-weight:600;
-    line-height:30px;
-    float: left;
-
-} */
-.korb{
+.info{
     font-size:20px;
     font-weight:600;
     line-height:50px;
     float: left;
     width: 1100px;
 }
+.palette-info{
+	font-size: 20px;
+	list-style: none;
+	padding-left: 0px;
+	margin-bottom: 5px;
+	position: absolute;
+	left: 30px;
+	text-align: left;
+}
+.palette-info li{
+	margin: 8px 0px 5px 0px;
+}
 
 
-
-
-
-.small{
+/* .small{
     font-size: 15px;
     text-align: center;
     margin:0px;
-}
+} */
 
 .title-1{
     font-size: 50px;
@@ -75,6 +79,7 @@ section{
     border-bottom: 3px solid;
     width: 100% ;
     float: left;   
+		font-family: 'Kdam Thmor Pro';
 }
 .title-2{
     font-size: 30px;
@@ -82,6 +87,7 @@ section{
     border-radius: 10px;
     width: 100%;
     float: left;
+    text-align: center;
 }
 /* #box{
     width: 306px;
@@ -98,24 +104,19 @@ section{
     float: left;
     border-bottom: 2px solid;
 } */
-div ul{
-    list-style: none;
-    padding-left: 0px;
-    text-align: left;
-    margin-bottom: 5px;
-    text-align: center;
-}
+
 #top {
     position: sticky;
     bottom: 0px;
     left: 1600px;
 }
 a{
- color:#000;
+	color:#000;
+
 }
 a:link{
-    color:#000;
-    text-decoration: none;
+  color:#000;
+  text-decoration: none;
 }
 a:visited{
     color: #000;
@@ -129,10 +130,61 @@ a:visited{
     width: 360px;
     height: 480px;
     float: left;
+    text-align: center;
+		position: relative;
 }
 .part-2{
     border: 1px dashed #000;
     width: 360px;
-    height: 400px;
+    height: 350px;
     float: left;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.part-2:hover .detail{
+	bottom: 0px
+}
+.detail{
+    background-color: #f8f8f8;
+    position: absolute;
+    width: 100%;
+    /* bottom: -110px; */
+		bottom: 0px;
+    left:0px;
+    height: 50%;
+		transition: 0.5s;
+		text-align: center;
+		padding: 0px;
+}
+.color-bt{
+	width: 100%;
+}
+.color-bt h3{
+	width: 50%;
+	font-size: 25px;
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	line-height: 40px;
+	margin: 15px;
+	border-radius: 10px;
+	cursor: pointer;
+	border: 1px solid;
+	transition: 0.3s;
+}
+.color-bt h3.active{
+	background: #292929;
+	color: #fff;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+		margin-top: 5px;
+		margin-bottom: 5px;
+}
+#best{
+	display: block;
+}
+#worst{
+	display: none;
 }
