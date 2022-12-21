@@ -1,41 +1,6 @@
 body{
 	width: 100%;
-	border: 1px solid #000;
 }
-/* aside */
-aside{
-    float: left;
-    font-size:32px;
-    width: 1200px;
-    margin: 0px 20% auto;
-    position: sticky;
-    top:0px;
-    text-align: left;
-    background: linear-gradient(45deg,#FB412C,#C6272C,#D94446,#E3536C,#E3536C,#E3536C,#c03121,#cf6265);
-    border-left: solid 3px #cccccc;
-    border-right: solid 3px #cccccc;
-}
-aside li{
-    text-align: center;
-    display: inline;
-    margin: 0px 80px;
-    position: relative; 
-    padding: 0;}
-
-aside li::after{
-    position: absolute; 
-    top: 5px; left: 0; 
-    width: 100%; 
-    height: 40px; 
-    line-height: 40px; 
-    content: attr(title); 
-    color: #000000; 
-    border-bottom: 2px solid #000; 
-    max-width: 0; 
-    overflow: hidden; 
-    transition: all 0.5s;
-}
-aside li:hover::after{max-width: 100%;}
 /* section */
 section{
     width: 1200px;
@@ -65,13 +30,6 @@ section{
 	margin: 8px 0px 5px 0px;
 }
 
-
-/* .small{
-    font-size: 15px;
-    text-align: center;
-    margin:0px;
-} */
-
 .title-1{
     font-size: 50px;
     margin-bottom: 10px;
@@ -79,31 +37,18 @@ section{
     border-bottom: 3px solid;
     width: 100% ;
     float: left;   
-		font-family: 'Kdam Thmor Pro';
+	font-family: 'Kdam Thmor Pro';
 }
 .title-2{
-    font-size: 30px;
-    border: 5px solid;
+    font-size: 40px;
+    padding: 20px 0px 20px 0px;
+    margin-bottom: 20px;
+    border: 1px solid;
     border-radius: 10px;
     width: 100%;
     float: left;
     text-align: center;
 }
-/* #box{
-    width: 306px;
-    height:300px;
-    margin: 0px 15px 0px 15px; 
-    padding: 5px 15px 25px 15px;
-    float: left;
-}
-#boxtitle{
-    border: 1px solid #000;
-    width: 64px;
-    padding: 0px 10px 0px 10px;
-    margin: 5px 140px 5px 140px;
-    float: left;
-    border-bottom: 2px solid;
-} */
 
 #top {
     position: sticky;
@@ -126,15 +71,13 @@ a:visited{
 }
 
 .part-1{
-    border: 1px dashed #000;
     width: 360px;
     height: 480px;
     float: left;
     text-align: center;
-		position: relative;
+	position: relative;
 }
 .part-2{
-    border: 1px dashed #000;
     width: 360px;
     height: 350px;
     float: left;
@@ -143,19 +86,18 @@ a:visited{
     position: relative;
 }
 .part-2:hover .detail{
-	bottom: 0px
+	bottom: -40px
 }
 .detail{
     background-color: #f8f8f8;
     position: absolute;
     width: 100%;
-    /* bottom: -110px; */
-		bottom: 0px;
+    bottom: -100px;
     left:0px;
     height: 50%;
-		transition: 0.5s;
-		text-align: center;
-		padding: 0px;
+	transition: 0.5s;
+	text-align: center;
+	padding: 0px;
 }
 .color-bt{
 	width: 100%;
@@ -182,9 +124,5 @@ h1, h2, h3, h4, h5, h6{
 		margin-top: 5px;
 		margin-bottom: 5px;
 }
-#best{
-	display: block;
-}
-#worst{
-	display: none;
-}
+
+
