@@ -6,3 +6,15 @@
     font-family:'Nanum Gothic';
     box-sizing: border-box;
 }
+body{
+	width: 1200px;
+    margin-left:20%;
+    float: left;
+}
+a:link{
+  color:#000;
+  text-decoration: none;
+}
+a:visited{
+    color: #000;
+}

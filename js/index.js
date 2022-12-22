@@ -9,7 +9,6 @@ $('.color-bt h3').click(function(){
         })
     }
 })
-// function asideScrol(name){
-//     let location = docuemnt.querySelector(name).offsetTop;
-//     window.scrollTo({top: location, behavior:'smooth'})
-// }
+function moveScroll(name){
+    window.scrollTo({top: document.querySelector(name).offsetTop-180, behavior: 'smooth'});
+}
