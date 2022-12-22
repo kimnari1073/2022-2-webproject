@@ -24,7 +24,7 @@ nav{
 }
 nav li{
     display: inline;
-    margin: 0px 110px;
+    margin: 0px 150px;
     position: relative; 
 }
 nav li::after{

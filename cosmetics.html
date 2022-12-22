@@ -11,7 +11,7 @@
   <header>
     <a class='main-logo' href='index.html'>Personal Color</a>
     <div>
-      <a href="login.html" class="login">로그인</a> |
+      <!-- <a href="login.html" class="login">로그인</a> | -->
       <a href="signUp.html" class="singUp">회원가입</a>
     </div>
   </header>
@@ -24,446 +24,334 @@
       <a href="cosmetics.html">
       <li>Cosmetics</li>
       </a>
-      <a href="hair.html">
-        <li>Hair</li>
-      </a>
-      <a href="ask.html">
+      <!-- <a href="ask.html">
         <li>Q & A</li>
-      </a>
+      </a> -->
     </ul>
   </nav>
 	<aside>
 		<ul>
-			<li><h2>퍼스널 컬러별</h2></li>
-			<ul>
-				<li>
-					<h2>Spring</h2>
-				</li>
-				<a href='/spring/bright/cosmetics.html' target="b">
-					<li>
-						<h3>Bright</h3>
-					</li>
-				</a>
-				<a href='/spring/true/cosmetics.html' target="b">
-					<li>
-						<h3>True</h3>
-					</li>
-				</a>
-				<a href='/spring/light/cosmetics.html' target="b">
-					<li>
-						<h3>Light</h3>
-					</li>
-				</a>
-				<li>
-					<h2>Summer</h2>
-				</li>
-				<a href='/summer/light/cosmetics.html' target="b">
-					<li>
-						<h3>Light</h3>
-					</li>
-				</a>
-				<a href='/summer/true/cosmetics.html' target="b">
-					<li>
-						<h3>True</h3>
-					</li>
-				</a>
-				<a href='/summer/soft/cosmetics.html' target="b">
-					<li>
-						<h3>Soft</h3>
-					</li>
-				</a>
-				<li>
-					<h2>Autumn</h2>
-				</li>
-				<a href='/autumn/soft/cosmetics.html' target="b">
-					<li>
-						<h3>Soft</h3>
-					</li>
-				</a>
-				<a href='/autumn/true/cosmetics.html' target="b">
-					<li>
-						<h3>True</h3>
-					</li>
-				</a>
-				<a href='/autumn/deep/cosmetics.html' target="b">
-					<li>
-						<h3>Deep</h3>
-					</li>
-				</a>
-				<h2>Winter</h2>
-				</li>
-				<a href='/winter/bright/cosmetics.html' target="b">
-					<li>
-						<h3>Bright</h3>
-					</li>
-				</a>
-				<a href='/winter/true/cosmetics.html' target="b">
-					<li>
-						<h3>True</h3>
-					</li>
-				</a>
-				<a href='/winter/deep/cosmetics.html' target="b">
-					<li>
-						<h3>Deep</h3>
-					</li>
-				</a>
-			</ul>
+			<h2>Spring</h2>
+			<li onclick="moveScroll('spring-bright')")><h3>Bright</h3></li>
+			<li onclick="moveScroll('spring-true')")><h3>True</h3></li>
+			<li onclick="moveScroll('spring-light')")><h3>Light</h3></li>
+			<h2>Summer</h2>
+			<li onclick="moveScroll('summer-light')"><h3>Light</h3></li>
+			<li onclick="moveScroll('summer-true')"><h3>True</h3></li>
+			<li onclick="moveScroll('summer-soft')"><h3>Soft</h3></li>
+			<h2>Autumn</h2>
+			<li onclick="moveScroll('autumn-soft')"><h3>Soft</h3></li>
+			<li onclick="moveScroll('autumn-true')"><h3>True</h3></li>
+			<li onclick="moveScroll('autumn-deep')"><h3>Deep</h3></li>
+			<h2>Winter</h2>
+			<li onclick="moveScroll('winter-bright')"><h3>Bright</h3></li>
+			<li onclick="moveScroll('winter-true')"><h3>True</h3></li>
+			<li onclick="moveScroll('winter-deep')"><h3>Deep</h3></li>
 		</ul>
 	</aside>
 	<section>
 		<!-- spring -->
 		<div id="spring">
-			<h1 class="title-1">봄 브라이트 립 & 블러셔 & 섀도우</h1>
-			<div>
-				<h2 style="background-color: #BD2F3B;">맥 매트 립스틱</h2>
-				<h3>맹 그로브</h3>
-				<img src="/img/spring/bright/lip01.png" width="300px" height="300px">
-				<h3 class="tag">#오렌지핑크<br>#매트<br>#포인트</h3>
+			<!-- spring-bright -->
+			<div id="spring-bright">
+				<h1 class="title-1">봄 브라이트 립 & 블러셔 & 섀도우</h1>
+				<div class="part">
+					<h2 class='title-2' style="border-color: #e42510aa;">맥 매트 립스틱<br>맹 그로브</h2>
+					<img src="/img/spring/bright/lip01.png">
+					<h3 class="tag">#오렌지핑크#매트#포인트</h3>
+				</div>
+				<div class="part">
+					<h2 class='title-2' style="border-color: #FB412Caa;">아임미미 이임 틱톡 립스틱<br>오렌지 보디슈트</h2>
+					<img src="/img/spring/bright/lip02.png">
+					<h3 class="tag">#오렌지레드#선명한#발림성좋은</h3>
+				</div>
+				<div class="part">
+					<h2 class='title-2' style="border-color: #F4866Daa" ;>삐아 라스트 블러쉬<br>코랄 블로썸</h2>
+					<img src="/img/spring/bright/blusher01.png">
+					<h3 class="tag">#발색갑#과즙#생기</h3>
+				</div>
+				<div class="part">
+					<h2 class='title-2' style="border-color: #D15062aa;">이니스프리 마이섀도우<br>홍시 냠냠</h2>
+					<img src="/img/spring/bright/shadow01.png">
+					<h3 class="tag">#글리터#핑크펄#포인트</h3>
+				</div>
 			</div>
-			<div>
-				<h2 style="background-color: #FB412C;">아임미미 이임 틱톡 립스틱</h2>
-				<h3>오렌지 보디슈트</h3>
-				<img src="/img/spring/bright/lip02.png" width="300px" height="300px">
-				<h3 class="tag">#오렌지 레드<br>#선명한<br>#발림성 좋은</h3>
+			<!-- spring-true -->
+			<div id="spring-true">
+				<h1 class="title-1">봄 트루 립 & 블러셔 & 섀도우</h1>
+				<div class="part">
+					<h2 class='title-2' style="border-color: #c82832aa;">네이밍 멜팅 글로우 립스틱<br>FLUFFY CORAL</h2>
+					<img src="/img/spring/true/lip01.png">
+					<h3 class="tag">#데일리립#촌촉쫀쫀#형광등템</h3>
+				</div>
+				<div class="part">
+					<h2 class='title-2' style="border-color: #D94446aa;">맥 파우더 키스 립스틱<br>스타일 쇼크드</h2>
+					<img src="/img/spring/true/lip02.png">
+					<h3 class="tag">#뽀송뽀송#레드오렌지#웜톤찰떡</h3>
+				</div>
+				<div class="part">
+					<h2 class='title-2' style="border-color: #E4A19B;">세잔느 내추럴 치크N<br>오렌지 핑크</h2>
+					<img src="/img/spring/true/blusher01.png">
+					<h3 class="tag">#펄블러셔#맑은발색#코랄핑크</h3>
+				</div>
+				<div class="part">
+					<h2 class='title-2' style="border-color: #E49380;">클리오 프로 아이 팔레트<br>코랄 토크</h2>
+					<img src="/img/spring/true/shadow01.png">
+					<h3 class="tag">#갓성비#웜톤필수템#꿀조합템</h3>
+				</div>
 			</div>
-			<h1>봄 브라이트 블러셔 & 섀도우</h1>
-			<div>
-				<h2 style="background-color: #F4866D" ;>삐아 라스트 블러쉬</h2>
-				<h3>코랄 블로썸</h3>
-				<img src="/img/spring/bright/blusher01.png" width="300px" height="300px">
-				<h3 class="tag">#발색갑<br>#과즙<br>#생기</h3>
-			</div>
-	
-			<div>
-				<h2 style="background-color: #D15062;">이니스프리 마이섀도우</h2>
-				<h3>홍시 냠냠</h3>
-				<img src="/img/spring/bright/shadow01.png" width="300px" height="300px">
-				<h3 class="tag">#글리터<br>#핑크펄<br>#포인트</h3>
-			</div>
-			<h1>봄웜라이트 립</h1>
-			<div>
-				<h2 style="background-color: #C6272C;">꾸뛰르 립 틴트 샤인</h2>
-				<h3>#피치 어썸</h3>
-				<img src="/img/spring/light/lip01.png" width="300px" height="300px">
-				<h3 class="tag">#핑크<br>#촉촉<br>#데일리</h3>
-			</div>
-	
-			<div>
-				<h2 style="background-color: #F6726D;">파우더 키스 립스틱</h2>
-				<h3>#쉬어 아웃트레지</h3>
-				<img src="/img/spring/light/lip02.png" width="300px" height="300px">
-				<h3 class="tag">#차분<br>#매트<br>#발색갑</h3>
-	
-			</div>
-	
-	
-	
-			<h1>봄웜라이트 섀도우 & 블러셔</h1>
-			<div>
-				<h2 style="background-color: #C58A84;">올 테이크 무드 팔레트</h2>
-				<h3>#봄바람아 너는 계획이 있구나</h3>
-				<img src="/img/spring/light/shadow01.png" width="300px" height="300px">
-				<h3 class="tag">#가성비갑<br>#다양<br>#데일리</h3>
-	
-			</div>
-			<div>
-				<h2 style="background-color: #FDCAB7;">밀크 치크 블러셔</h2>
-				<h3>#바난 우유</h3>
-				<img src="/img/spring/light/blusher01.png" width="300px" height="300px">
-				<h3 class="tag">#은은한<br>#데일리<br>#밀크색</h3>
-			</div>
-			<h1>봄 트루 립</h1>
-			<div>
-				<h2 style="background-color: #c82832;">네이밍 멜팅 글로우 립스틱</h2>
-				<h3>FLUFFY CORAL</h3>
-				<img src="/img/spring/true/lip01.png" width="300px" height="300px">
-				<h3 class="tag">#데일리립<br>#촌촉쫀쫀<br>#형광등템</h3>
-			</div>
-			<div>
-				<h2 style="background-color: #D94446;">맥 파우더 키스 립스틱</h2>
-				<h3>스타일 쇼크드</h3>
-				<img src="/img/spring/true/lip02.png" width="300px" height="300px">
-				<h3 class="tag">#뽀송뽀송<br>#레드오렌지<br>#웜톤 찰떡</h3>
-			</div>
-	
-	
-	
-			<h1>봄 트루 블러셔 & 섀도우</h1>
-			<div>
-				<h2 style="background-color: #E4A19B;">세잔느 내추럴 치크N</h2>
-				<h3>오렌지 핑크</h3>
-				<img src="/img/spring/true/blusher01.png" width="300px" height="300px">
-				<h3 class="tag">펄블러셔<br>맑은발색<br>코랄핑크</h3>
-			</div>
-			<div>
-				<h2 style="background-color: #E49380;">클리오 프로 아이 팔레트</h2>
-				<h3>코랄 토크</h3>
-				<img src="/img/spring/true/shadow01.png" width="300px" height="300px">
-				<h3 class="tag">#갓성비<br>#웜톤 필수템<br>#꿀조합템</h3>
+			<!-- spring-light -->
+			<div id="spring-light">
+				<h1 class="title-1">봄웜라이트 립 & 섀도우 & 블러셔</h1>
+				<div class="part">
+					<h2 class='title-2' style="border-color: #C6272C;">꾸뛰르 립 틴트 샤인<br>#피치 어썸</h2>
+					<img src="/img/spring/light/lip01.png" height="250px">
+					<h3 class="tag">#핑크#촉촉#데일리</h3>
+				</div>
+				<div class="part">
+					<h2 class='title-2' style="border-color: #F6726D;">파우더 키스 립스틱<br>쉬어 아웃트레지</h2>
+					<img src="/img/spring/light/lip02.png" height="250px">
+					<h3 class="tag">#차분#매트#발색갑</h3>
+				</div>
+				<div class="part">
+					<h2 class='title-2' style="border-color: #C58A84;">올 테이크 무드 팔레트<br>#봄바람아 너는 계획이 있구나</h2>
+					<img src="/img/spring/light/shadow01.png" height="290px">
+					<h3 class="tag">#가성비갑#다양#데일리</h3>
+				</div>
+				<div class="part">
+					<h2 class='title-2' style="border-color: #FDCAB7;">밀크 치크 블러셔<br>바난 우유</h2>
+					<img src="/img/spring/light/blusher01.png" height="290px">
+					<h3 class="tag">#은은한#데일리#밀크색</h3>
+				</div>
 			</div>
 		</div >
 		<!-- summer -->
 		<div id="summer">
-			<h1>여름 쿨라이트 립</h1>
-			<div>
-				<h2 style="background-color: #CF5E62;">스틸로 엉크르 아 레브르</h2>
-				<h3>#뱅 프루아</h3>
-				<img src="/img/summer/light/lip01.png" width="300px" height="300px">
-				<h3 class="tag">#핑크립<br>#촉촉한<br>#자연미</h3>
-	
+			<!-- summer-light -->
+			<div id="summer-light">
+				<h1 class="title-1">여름 쿨라이트 립 & 섀도우 & 블러셔</h1>
+				<div class="part">
+					<h2 class="title-2" style="border-color: #CF5E62;">스틸로 엉크르 아 레브르<br>뱅 프루아</h2>
+					<img src="/img/summer/light/lip01.png">
+					<h3 class="tag">#핑크립#촉촉한#자연미</h3>
+				</div>
+				<div class="part">
+					<h2 class="title-2" style="border-color: #E3536C;">타투 페일 벨벳 틴트<br>29 보라</h2>
+					<img src="/img/summer/light/lip02.png">
+					<h3 class="tag">#매트립#발색력좋은#차분한</h3>
+				</div>
+				<div class="part">
+					<h2 class="title-2" style="border-color: #F8C0BF;">파이널 섀도우 팔레트 3<br>사랑의 콩깍지</h2>
+					<img src="/img/summer/light/shadow01.png" height="290px">
+					<h3 class="tag">#가성비갑#핑크핑크#데일리</h3>
+				</div>
+				<div class="part">
+					<h2 class="title-2" style="border-color: #EDC5C6;">피스매칭 블러셔<br>클린 라벤더</h2>
+					<img src="/img/summer/light/blusher01.png" height="290px">
+					<h3 class="tag">#라벤더#펄없는차분함#자연미</h3>
+				</div>
 			</div>
-	
-			<div>
-				<h2 style="background-color: #E3536C;">타투 페일 벨벳 틴트</h2>
-				<h3>#29 보라</h3>
-				<img src="/img/summer/light/lip02.png" width="300px" height="300px">
-				<h3 class="tag">#매트립<br>#발색력 좋은<br>#차분한</h3>
-	
+			<!-- summer-true -->
+			<div id="summer-true">
+				<h1 class="title-1">여름 트루 립 & 블러셔 & 섀도우</h1>
+		  	<div class="part">
+		  		<h2 class='title-2' style="border-color: #CF5E62;">비바이바닐라 스플래쉬 워터 틴트<br>PK03 체리스퀴즈</h2>
+		  		<img src="/img/summer/true/lip01.png" height="300px">
+		  		<h3 class="tag">#수분가득#촉촉물광#과즙팡팡</h3>
+		  	</div>
+		  	<div class="part">
+		  		<h2 class='title-2' style="border-color: #E3536C;">에스쁘아 꾸뛰르 립 틴트 벨벳<br>핑크 미 업</h2>
+		  		<img src="/img/summer/true/lip02.png" height="300px">
+		  		<h3 class="tag">#데일리#벨벳#쫀쫀촉촉</h3>
+		  	</div>
+		  	<div class="part">
+		  		<h2 class='title-2' style="border-color: #F8C0BF;">에뛰드 에어무스아이즈<br>꽃보다 만개하나봄</h2>
+		  		<img src="/img/summer/true/shadow01.png">
+		  		<h3 class="tag">#글리터섀도우#펄가득#밀착력갑</h3>
+		  	</div>
+		  	<div class="part">
+		  		<h2 class='title-2' style="border-color: #EDC5C6;">로라메르시에 블러쉬 컬러 인퓨전<br>스트로 베리</h2>
+		  		<img src="/img/summer/true/blusher01.png">
+		  		<h3 class="tag">#여리여리#부드러운#맑은</h3>
+		  	</div>
+			</div>			
+			<!-- summer-soft -->
+			<div id="summer-soft">
+				<h1 class="title-1">여름 소프트 립 & 섀도우 & 블러셔</h1>
+				<div class="part">
+					<h2 class='title-2' style="border-color: #CF5E62;">퓌 틴트 스웨이드<br>02 드라이 리허설</h2>
+					<img src="/img/summer/soft/lip01.png" height="320px">
+					<h3 class="tag">#벨벳#촉촉보송#차분한</h3>
+				</div>
+				<div class="part">
+					<h2 class='title-2' style="border-color: #E3536C;">샬롯틸버리 매트 레볼루션<br>베리 빅토리아</h2>
+					<img src="/img/summer/soft/lip02.png" height="320px">
+					<h3 class="tag">#매트립#발색력좋은#MLBB</h3>
+				</div>
+				<div class="part">
+					<h2 class='title-2' style="border-color: #F8C0BF;">클리오 프로 아이 팔레트<br>13호 저녁노을피크닉</h2>
+					<img src="/img/summer/soft/shadow01.png" height="320px">
+					<h3 class="tag">#가성비갑#음영#데일리</h3>
+				</div>
+				<div class="part">
+					<h2 class='title-2' style="border-color: #EDC5C6;">어퓨 과즙팡 머랭 블러셔<br>PK02 달달한딸기랭</h2>
+					<img src="/img/summer/soft/blusher01.png" height="320px">
+					<h3 class="tag">#과즙뿜뿜#핑크&보라#차분한</h3>
+				</div>
 			</div>
-			<h1>여름 쿨라이트 섀도우 & 블러셔</h1>
-			<div>
-				<h2 style="background-color: #F8C0BF;">파이널 섀도우 팔레트 3</h2>
-				<h3>#사랑의 콩깍지</h3>
-				<img src="/img/summer/light/shadow01.png" width="300px" height="300px">
-				<h3 class="tag">#가성비갑<br>#핑크핑크<br>#데일리</h3>
-			</div>
-			<div>
-				<h2 style="background-color: #EDC5C6;">피스매칭 블러셔</h2>
-				<h3>#클린 라벤더</h3>
-				<img src="/img/summer/light/blusher01.png" width="300px" height="300px">
-				<h3 class="tag">#라벤더<br>#펄없는차분함<br>#자연미</h3>
-			</div>
-			<h1>여름 소프트 립</h1>
-	  <div>  
-	      <h2 style="background-color: #CF5E62;">퓌 틴트 스웨이드</h2>
-	        <h3>02 드라이 리허설</h3>
-	        <img src="/img/summer/soft/lip01.png" width="300px" height="300px">
-	        <h3 class="tag">#벨벳<br>#촉촉보송<br>#차분한</h3>
-	    
-	    </div>
-	    
-	    <div>  
-	      <h2 style="background-color: #E3536C;">샬롯틸버리 매트 레볼루션</h2>
-	        <h3>베리 빅토리아</h3>
-	        <img src="/img/summer/soft/lip02.png" width="300px" height="300px">
-	        <h3 class="tag">#매트립<br>#발색력좋은<br>#MLBB</h3>
-	    
-	    </div>
-	    <h1>여름 소프트 섀도우 & 블러셔</h1>
-	    <div>  
-	      <h2 style="background-color: #F8C0BF;">클리오 프로 아이 팔레트</h2>
-	        <h3>13호 저녁노을피크닉</h3>
-	        <img src="/img/summer/soft/shadow01.png" width="300px" height="300px">
-	        <h3 class="tag">#가성비갑<br>#음영<br>#데일리</h3>
-	    </div>
-	    <div>  
-	      <h2 style="background-color: #EDC5C6;">어퓨 과즙팡 머랭 블러셔</h2>
-	        <h3>PK02 달달한딸기랭</h3>
-	        <img src="/img/summer/soft/blusher01.png" width="300px" height="300px">
-	        <h3 class="tag">#과즙뿜뿜<br>#핑크&보라<br>#차분한</h3>
-	    
-	    </div>
-			<h1>여름 트루 립</h1>
-	  <div>  
-	      <h2 style="background-color: #CF5E62;">비바이바닐라 컬러 스플래쉬 워터 틴트</h2>
-	        <h3>PK03 체리스퀴즈</h3>
-	        <img src="/img/summer/true/lip01.png" width="300px" height="300px">
-	        <h3 class="tag">#수분가득<br>#촉촉물광<br>#과즙팡팡</h3>
-	    
-	    </div>
-	    
-	    <div>  
-	      <h2 style="background-color: #E3536C;">에스쁘아 꾸뛰르 립 틴트 벨벳</h2>
-	        <h3>핑크 미 업</h3>
-	        <img src="/img/summer/true/lip02.png" width="300px" height="300px">
-	        <h3 class="tag">#데일리<br>#벨벳<br>#쫀쫀촉촉</h3>
-	    
-	    </div>
-	    <h1>여름 트루 섀도우 & 블러셔</h1>
-	    <div>  
-	      <h2 style="background-color: #F8C0BF;">에뛰드 에어무스아이즈</h2>
-	        <h3>꽃보다 만개하나봄</h3>
-	        <img src="/img/summer/true/shadow01.png" width="300px" height="300px">
-	        <h3 class="tag">#글리터섀도우<br>#펄가득<br>#밀착력갑</h3>
-	    </div>
-	    <div>  
-	      <h2 style="background-color: #EDC5C6;">로라메르시에 블러쉬 컬러 인퓨전</h2>
-	        <h3>스트로 베리</h3>
-	        <img src="/img/summer/true/blusher01.png" width="300px" height="300px">
-	        <h3 class="tag">#여리여리<br>#부드러운<br>#맑은</h3>
-	    
-	    </div>
 		</div >
 		<!-- autumn -->
 		<div id="autumn">
-			<h1>가을 소프트 립</h1>
-	    <div>
-	        <h2 style="background-color: #d95b5c;">삐아 라스트 립스틱</h2>
-	        <h3>04 지적</h3>
-	        <img src="/img/autumn/soft/lip01.png" width="300px" height="300px">
-	        <h3 class="tag">#말린장미<br>#보송보송<br>#가성비갑</h3>
-	    </div>
-	    <div>
-	        <h2 style="background-color: #cf6265;">웨이크메이크 루즈건 제로 에어</h2>
-	        <h3>05 메리 엠버</h3>
-	        <img src="/img/autumn/soft/lip02.png" width="300px" height="300px">
-	        <h3 class="tag">#포슬포슬<br>#분위기갑<br>#차분한</h3>
-	    </div>
-	
-	    <h1>가을 소프트 블러셔 & 섀도우 </h1>
-	    <div>
-	        <h2 style="background-color: #D49981;">어퓨 BE02</h2>
-	        <h3>무정한 무화과</h3>
-	        <img src="/img/autumn/soft/blusher01.png" width="300px" height="300px">
-	        <h3 class="tag">#젤리블러셔<br>#차분<br>#우아</h3>
-	    </div>
-	    <div>
-	        <h2 style="background-color: #CC6F4E;">치카이치코 원샷 아이팔레트</h2>
-	        <h3>칠리 브릭</h3>
-	        <img src="/img/autumn/soft/shadow01.png" width="300px" height="300px">
-	        <h3 class="tag">#가성비갑<br>#갈웜국민템<br>#다양한컬러</h3>
-	    </div>
-			<h1>가을 트루 립</h1>
-	    <div>
-	        <h2 style="background-color: #c03121;">페리페라 05</h2>
-	        <h3>웜톤 정모</h3>
-	        <img src="/img/autumn/true/lip01.png" width="300px" height="300px">
-	        <h3 class="tag">#블러틴트<br>#보송보송<br>#벨벳립</h3>
-	    </div>
-	    <div>
-	        <h2 style="background-color: #ee110a;">밀리마쥬 01</h2>
-	        <h3>서쉬 레드</h3>
-	        <img src="/img/autumn/true/lip02.png" width="300px" height="300px">
-	        <h3 class="tag">#쓱싹착틴트<br>#밀착<br>#레드오렌지</h3>
-	    </div>
-	
-	    <h1>가을 트루 블러셔 & 섀도우 </h1>
-	    <div>
-	        <h2 style="background-color: #eb705c;">이니스프리 18</h2>
-	        <h3>크림 가득 메리골드</h3>
-	        <img src="/img/autumn/true/blusher01.png" width="300px" height="300px">
-	        <h3 class="tag">#생기가득<br>#골드펄<br>#코랄블러셔</h3>
-	    </div>
-	    <div>
-	        <h2 style="background-color: #f7ab81;">미샤 MBR01</h2>
-	        <h3>치 아바타</h3>
-	        <img src="/img/autumn/true/shadow01.png" width="300px" height="300px">
-	        <h3 class="tag">#음영베이스<br>#은은한<br>#데일리</h3>
-	    </div>
-			<h1>가을 딥 립</h1>
-	    <div>
-	        <h2 style="background-color: #D83052;;">에뛰드 하우스 BR404</h2>
-	        <h3>겁먹은 레드</h3>
-	        <img src="/img/autumn/deep/lip01.png" width="300px" height="300px">
-	        <h3 class="tag">#웜레드<br>#가성비갑<br>#벨벳</h3>
-	    </div>
-	    <div>
-	        <h2 style="background-color: #B81D1D;">네이처리퍼블릭 05</h2>
-	        <h3>브릭 레드 무스</h3>
-	        <img src="/img/autumn/deep/lip02.png" width="300px" height="300px">
-	        <h3 class="tag">#인생템<br>#갈웜국민템<br>#매끈</h3>
-	    </div>
-	
-	    <h1>가을 딥 블러셔 & 섀도우 </h1>
-	    <div>
-	        <h2 style="background-color: #D49981;">어퓨 BE02</h2>
-	        <h3>무정한 무화과</h3>
-	        <img src="/img/autumn/deep/blusher01.png" width="300px" height="300px">
-	        <h3 class="tag">#젤리블러셔<br>#차분<br>#우아</h3>
-	    </div>
-	    <div>
-	        <h2 style="background-color: #CC6F4E;">치카이치코 원샷 아이팔레트</h2>
-	        <h3>칠리 브릭</h3>
-	        <img src="/img/autumn/deep/shadow01.png" width="300px" height="300px">
-	        <h3 class="tag">#가성비갑<br>#갈웜국민템<br>#다양한컬러</h3>
-	    </div>
+			<!-- autumn-soft -->
+			<div id="autumn-soft">
+				<h1 class="title-1">가을 소프트 립 & 블러셔 & 섀도우</h1>
+				<div class="part">
+					<h2 class='title-2' style="border-color: #d95b5c;">삐아 라스트 립스틱<br>04 지적</h2>
+					<img src="/img/autumn/soft/lip01.png">
+					<h3 class="tag">#말린장미#보송보송#가성비갑</h3>
+				</div>
+				<div class="part">
+					<h2 class='title-2' style="border-color: #cf6265;">웨이크메이크 루즈건 제로 에어<br>05 메리 엠버</h2>
+					<img src="/img/autumn/soft/lip02.png">
+					<h3 class="tag">#포슬포슬#분위기갑#차분한</h3>
+				</div>
+				<div class="part">
+					<h2 class='title-2' style="border-color: #D49981;">어퓨 BE02<br>무정한 무화과</h2>
+					<img src="/img/autumn/soft/blusher01.png">
+					<h3 class="tag">#젤리블러셔#차분#우아</h3>
+				</div>
+				<div class="part">
+					<h2 class='title-2' style="border-color: #CC6F4E;">치카이치코 원샷 아이팔레트<br>칠리 브릭</h2>
+					<img src="/img/autumn/soft/shadow01.png">
+					<h3 class="tag">#가성비갑#갈웜국민템#다양한컬러</h3>
+				</div>
+			</div>
+			<!-- autumn-true -->
+			<div id="autumn-true">
+				<h1 class="title-1">가을 트루 립</h1>
+				<div class="part">
+					<h2 class='title-2' style="border-color: #c03121;">페리페라 05<br>웜톤 정모</h2>
+					<img src="/img/autumn/true/lip01.png" height="350">
+					<h3 class="tag">#블러틴트#보송보송#벨벳립</h3>
+				</div>
+				<div class="part">
+					<h2 class='title-2' style="border-color: #ee110a;">밀리마쥬 01<br>서쉬 레드</h2>
+					<img src="/img/autumn/true/lip02.png" height="350">
+					<h3 class="tag">#쓱싹착틴트#밀착#레드오렌지</h3>
+				</div>
+				<div class="part">
+					<h2 style="background-color: #eb705c;">이니스프리 18<br>크림 가득 메리골드</h2>
+					<img src="/img/autumn/true/blusher01.png" height="350">
+					<h3 class="tag">#생기가득#골드펄#코랄블러셔</h3>
+				</div>
+				<div class="part">
+					<h2 style="background-color: #f7ab81;">미샤 MBR01<br>치 아바타</h2>
+					<img src="/img/autumn/true/shadow01.png" height="350">
+					<h3 class="tag">#음영베이스#은은한#데일리</h3>
+				</div>
+			</div>
+			<!-- autumn-deep -->
+			<div id="autumn-deep">
+				<h1 class="title-1">가을 딥 립 & 블러셔 & 섀도우</h1>
+		    <div class="part">
+		    	<h2 style="background-color: #D83052;;">에뛰드 하우스 BR404<br>겁먹은 레드</h2>
+		    	<img src="/img/autumn/deep/lip01.png">
+		    	<h3 class="tag">#웜레드#가성비갑#벨벳</h3>
+		    </div>
+		    <div class="part">
+		    	<h2 style="background-color: #B81D1D;">네이처리퍼블릭 05<br>브릭 레드 무스</h2>
+		    	<img src="/img/autumn/deep/lip02.png">
+		    	<h3 class="tag">#인생템#갈웜국민템#매끈</h3>
+		    </div>
+		    <div class="part">
+		    	<h2 style="background-color: #D49981;">어퓨 BE02<br>무정한 무화과</h2>
+		    	<img src="/img/autumn/deep/blusher01.png">
+		    	<h3 class="tag">#젤리블러셔<br>#차분<br>#우아</h3>
+		    </div>
+		    <div class="part">
+		    	<h2 style="background-color: #CC6F4E;">치카이치코 원샷 아이팔레트<br>칠리 브릭</h2>
+		    	<img src="/img/autumn/deep/shadow01.png">
+		    	<h3 class="tag">#가성비갑<br>#갈웜국민템<br>#다양한컬러</h3>
+		    </div>
+			</div>
 		</div>
 		<!-- winter -->
 		<div id="winter">
-			<h1>겨울 브라이트 립</h1>
-	    <div>
-	        <h2 style="background-color: #DD374B;">디올 어딕트 라커 스틱</h2>
-	        <h3>877 턴 미 디올</h3>
-	        <img src="/img/winter/bright/lip01.png" width="300px" height="300px">
-	        <h3 class="tag">#형광등템<br>#발색력좋은<br>#유리알광택</h3>
-	    </div>
-	    <div>
-	        <h2 style="background-color: #D83052;">맥 레트로 매트 립스틱</h2>
-	        <h3>올 파이어드 업</h3>
-	        <img src="/img/winter/bright/lip02.png" width="300px" height="300px">
-	        <h3 class="tag">#매트 립<br>#지속력 좋은<br>#인생템</h3>
-	    </div>
-	
-	    <h1>겨울 브라이트 블러셔 & 글리터 </h1>
-	    <div>
-	        <h2 style="background-color: #b88bb6;">에뛰드 러블리 쿠키 블러셔</h2>
-	        <h3>라벤더 쉬폰 케이크</h3>
-	        <img src="/img/winter/bright/blusher01.png" width="300px" height="300px">
-	        <h3 class="tag">#생기있는<br>#은은한펄<br>#연보라</h3>
-	    </div>
-	    <div>
-	        <h2 style="background-color: #f99595;">홀리카홀리카 아이 스팽글리터</h2>
-	        <h3>캔디 파츠</h3>
-	        <img src="/img/winter/bright/glitter01.png" width="300px" height="300px">
-	        <h3 class="tag">#펄잔치<br>#핑크베이스<br>#분위기갑</h3>
-	    </div>
-			<h1>겨울 트루 립</h1>
-	    <div>
-	        <h2 style="background-color: #c51843;">하트크러쉬 글로우 틴트 에어</h2>
-	        <h3>13 메이</h3>
-	        <img src="/img/winter/true/lip01.png" width="300px" height="300px">
-	        <h3 class="tag">#형광등템<br>#촉촉 립<br>#유리알광택</h3>
-	    </div>
-	    <div>
-	        <h2 style="background-color: #c61945;">애프터글로우 립 샤인</h2>
-	        <h3>다크 디즈</h3>
-	        <img src="/img/winter/true/lip02.png" width="300px" height="300px">
-	        <h3 class="tag">#촉촉 립<br>#지속력 좋은<br>#인생템</h3>
-	    </div>
-	
-	    <h1>겨울 트루 섀도우 & 블러셔 </h1>
-	    <div>
-	        <h2 style="background-color: #e5a1b5;">스윗 다이아</h2>
-	        <H3>180 로즈로코코</H3>
-	        <img src="/img/winter/true/shadow01.png" width="300px" height="300px">
-	        <h3 class="tag">#데일리템<br>#새틴<br>#연핑크</h3>
-	    </div>
-	    <div>
-	        <h2 style="background-color: #e99cae;">치키 시크 블러셔</h2>
-	        <h3>19 컬러 파워</h3>
-	        <img src="/img/winter/true/blusher01.png" width="300px" height="300px">
-	        <h3 class="tag">#생기있는<br>#수줍<br>#연핑크</h3>
-	    </div>
-			<h1>겨울 딥 립</h1>
-	    <div>
-	        <h2 style="background-color: #7e2830;">아멜리 플랫 립스</h2>
-	        <h3>928 콜드블러드</h3>
-	        <img src="/img/winter/deep/lip01.png" width="300px" height="300px">
-	        <h3 class="tag">#매트 립<br>#발색력 좋은<br>#다크뿜뿜</h3>
-	    </div>
-	    <div>
-	        <h2 style="background-color: #D83052;">블러링 리퀴드 립</h2>
-	        <h3>베어 베리</h3>
-	        <img src="/img/winter/deep/lip02.png" width="300px" height="300px">
-	        <h3 class="tag">#매트 립<br>#지속력 좋은<br>#인생템</h3>
-	    </div>
-	
-	    <h1>겨울 딥 블러셔 & 섀도우 </h1>
-	    <div>
-	        <h2 style="background-color: #BC7583;">캔 메이크</h2>
-	        <h3>PW38 플럼 핑크</h3>
-	        <img src="/img/winter/deep/blusher01.png" width="300px" height="300px">
-	        <h3 class="tag">#은은한<br>#찰떡템<br>#부드러운</h3>
-	    </div>
-	    <div>
-	        <h2 style="background-color: #866166;">뉴 뎁스 아이섀도우</h2>
-	        <h3>어 센 틱</h3>
-	        <img src="/img/winter/deep/shadow01.png" width="300px" height="300px">
-	        <h3 class="tag">#감성<br>#질감굿<br>#차분한컬러</h3>
-	    </div>
+			<!-- winter-bright -->
+			<div id="winter-bright">
+				<h1 class="title-1">겨울 브라이트 립 & 블러셔 & 섀도우</h1>
+		    <div class="part">
+		    	<h2 class="title-2" style="border-color: #DD374B;">디올 어딕트 라커 스틱<br>877 턴 미 디올</h2>
+		    	<img src="/img/winter/bright/lip01.png">
+		    	<h3 class="tag">#형광등템#발색력좋은#유리알광택</h3>
+		    </div>
+		    <div class="part">
+		    	<h2 class="title-2" style="border-color: #D83052;">맥 레트로 매트 립스틱<br>올 파이어드 업</h2>
+		    	<img src="/img/winter/bright/lip02.png">
+		    	<h3 class="tag">#매트 립#지속력 좋은#인생템</h3>
+		    </div>
+		    <div class="part">
+		    	<h2 class="title-2" style="border-color: #b88bb6;">에뛰드 러블리 쿠키 블러셔<br>라벤더 쉬폰 케이크</h2>
+		    	<img src="/img/winter/bright/blusher01.png">
+		    	<h3 class="tag">#생기있는#은은한펄#연보라</h3>
+		    </div>
+		    <div class="part">
+		    	<h2 class="title-2" style="border-color: #f99595;">홀리카홀리카 아이 스팽글리터<br>캔디 파츠</h2>
+		    	<img src="/img/winter/bright/glitter01.png">
+		    	<h3 class="tag">#펄잔치#핑크베이스#분위기갑</h3>
+				</div>
+			</div>
+			<!-- winter-true -->
+			<div id="winter-true">
+				<h1 class="title-1">겨울 트루 립 & 블러셔 & 섀도우</h1>
+		    <div class="part">
+		    	<h2 class="title-2" style="border-color: #c51843;">하트크러쉬 글로우 틴트 에어<br>13 메이</h2>
+		    	<img src="/img/winter/true/lip01.png">
+		    	<h3 class="tag">#형광등템#촉촉 립#유리알광택</h3>
+		    </div>
+		    <div class="part">
+		    	<h2 class="title-2" style="border-color: #c61945;">애프터글로우 립 샤인<br>다크 디즈</h2>
+		    	<img src="/img/winter/true/lip02.png">
+		    	<h3 class="tag">#촉촉 립#지속력 좋은#인생템</h3>
+		    </div>
+		    <div class="part">
+		    	<h2 class="title-2" style="border-color: #e5a1b5;">스윗 다이아<br>180 로즈로코코</h2>
+		    	<img src="/img/winter/true/shadow01.png">
+		    	<h3 class="tag">#데일리템#새틴#연핑크</h3>
+		    </div>
+		    <div class="part">
+		    	<h2 class="title-2" style="border-color: #e99cae;">치키 시크 블러셔<br>19 컬러 파워</h2>
+		    	<img src="/img/winter/true/blusher01.png">
+		    	<h3 class="tag">#생기있는#수줍#연핑크</h3>
+		    </div>
+			</div>
+			<!-- winter-deep -->
+			<div id="winter-deep">
+				<h1 class="title-1">겨울 딥 립</h1>
+		    <div class="part">
+		    	<h2 class="title-2" style="border-color: #7e2830;">아멜리 플랫 립스<br>928 콜드블러드</h2>
+		    	<img src="/img/winter/deep/lip01.png">
+		    	<h3 class="tag">#매트립#발색력좋은#다크뿜뿜</h3>
+		    </div>
+		    <div class="part">
+		    	<h2 class="title-2" style="border-color: #D83052;">블러링 리퀴드 립<br>베어 베리</h2>
+		    	<img src="/img/winter/deep/lip02.png">
+		    	<h3 class="tag">#매트립#지속력좋은#인생템</h3>
+		    </div>
+		    <div class="part">
+		    	<h2 class="title-2" style="border-color: #BC7583;">캔 메이크<br>PW38 플럼 핑크</h2>
+		    	<img src="/img/winter/deep/blusher01.png">
+		    	<h3 class="tag">#은은한#찰떡템#부드러운</h3>
+		    </div>
+		    <div class="part">
+		    	<h2 class="title-2" style="border-color: #866166;">뉴 뎁스 아이섀도우<br>어 센 틱</h2>
+		    	<img src="/img/winter/deep/shadow01.png">
+		    	<h3 class="tag">#감성#질감굿#차분한컬러</h3>
+		    </div>
+			</div>
 		</div>
 	</section>
 	<script src="js/jquery-1.12.4.js"></script>
-  <script src="js/test.js"></script>
+  <script src="js/cosmetics.js"></script>
 </body>
 </html>
